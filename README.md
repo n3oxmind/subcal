@@ -123,6 +123,6 @@ $ subcal design -s 200 -h 120 -c C
 ### Future plans
 - ipv4 summary
 - ipv6 subnet calculator
-- ipv4 to ipv6 convertion
+- ipv4 to ipv6 conversion
 - Simplify or extend ipv6 address
 - other stuff related to ipv6
