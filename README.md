@@ -2,7 +2,7 @@
 
 subcal is a commmand line tool that will allows the following:
 - Subnet calculator, classful and classless
-- Subnet design, find subnetmasks that meet the requirements
+- Subnet design, find subnetmasks that meet the design requirements
 - Get detailed information about a specific network/subnet 
 - Find Residnetsubnet and more 
 
@@ -14,7 +14,7 @@ subcal is a commmand line tool that will allows the following:
 4. sudo make install
 ```
 
-### Get information specific classful network
+#### Get information about specific classful network
 ```
 $ subcal info --ip4 192.168.10.3/26
     Subnet Address:         192.168.10.0
@@ -27,7 +27,7 @@ $ subcal info --ip4 192.168.10.3/26
     Network Class:          Class C
     Subnet Mask Bits:       TODO:
 ```
-### Get information specific classless network
+#### Get information about specific classless network
 ```
 $ subcal info --ip4 192.168.10.3/22 /26
     Subnet Address:         192.168.10.0
@@ -40,7 +40,7 @@ $ subcal info --ip4 192.168.10.3/22 /26
     Network Class:          Class C
     Subnet Mask Bits:       TODO:
 ```
-### Classful network subnetting (classful subnet generator)
+#### Classful network subnetting (classful subnet generator)
 ```
     $ subcal gen --ip4 192.168.10.3/28
     ---------------------------------------------------------------------------
@@ -64,7 +64,7 @@ $ subcal info --ip4 192.168.10.3/22 /26
     192.168.10.240   | 192.168.10.241  -  192.168.10.254   | 192.168.10.255   |
     -----------------+-------------------------------------+------------------+
 ```
-### Classless network subnetting (CIDR subnet calcolator)
+#### Classless network subnetting (CIDR subnet calcolator)
 ```
 $ subcal gen --ip4 192.168.10.3/16 /28 
     ---------------------------------------------------------------------------
@@ -93,7 +93,8 @@ $ subcal gen --ip4 192.168.10.3/16 /28
     Use '-v' to generate all possible subnets(4096).
 ```
 By default the number of generated subnets is 20, you can use '-v' to generate all the subnets.
-### Subnet Design 
+
+#### Subnet Design 
 A subnetting design requires 200 subnets and 120 hosts/subnet, find all possible mask that meet this requirements 
 ```
 $ subcal design -s 200 -h 120 -c A
@@ -117,8 +118,9 @@ $ subcal design -s 200 -h 120 -c B
 $ subcal design -s 200 -h 120 -c C
     Network Class 'C' cannot produce 200 subnets and 120 hosts. Try different Class.
 ```
-**note: subcal syntax allow the mask to be in DDN or prefix format e.g. /24 or 255.255.255.0 both format are valid.
-###Future plan
+**Note**: subcal syntax allow the mask to be in DDN or prefix format e.g. /24 or 255.255.255.0 both format are valid.
+
+####Future plans
     - ipv4 summary
     - ipv6 subnet calculator
     - ipv4 to ipv6 convertion
