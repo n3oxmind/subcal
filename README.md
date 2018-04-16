@@ -118,9 +118,9 @@ $ subcal design -s 200 -h 120 -c B
 $ subcal design -s 200 -h 120 -c C
     Network Class 'C' cannot produce 200 subnets and 120 hosts. Try different Class.
 ```
-**Note**: subcal syntax allow the mask to be in DDN or prefix format e.g. /24 or 255.255.255.0 both format are valid.
+**Note**: subcal syntax allow the mask to be in DDN or prefix format e.g. /24 or 255.255.255.0 both formats are valid.
 
-####Future plans
+### Future plans
     - ipv4 summary
     - ipv6 subnet calculator
     - ipv4 to ipv6 convertion
